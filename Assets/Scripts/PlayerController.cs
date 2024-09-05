@@ -58,8 +58,8 @@ public class PlayerController : MonoBehaviour
 
     public void MoveControl()
     {
-        float deltaX = Input.GetAxis("Horizontal");
-        float deltaZ = Input.GetAxis("Vertical");
+        float deltaX = SimpleInput.GetAxis("Horizontal");
+        float deltaZ = SimpleInput.GetAxis("Vertical");
         float deltaT = Time.deltaTime;
 
         animSpeed= new Vector2(deltaX, deltaZ);
@@ -78,7 +78,8 @@ public class PlayerController : MonoBehaviour
 
     public void ActionsControl()
     {
-        Jumping = Input.GetKey(KeyCode.Space);
+        //Jumping = Input.GetKey(KeyCode.Space);
+        Jumping = SimpleInput.GetButtonDown("Jump");
 
         if(OnGround)
         {
@@ -91,8 +92,8 @@ public class PlayerController : MonoBehaviour
 
     public void CameraControl()
     {
-        float mouseX = Input.GetAxis("Mouse X");
-        float mouseY = Input.GetAxis("Mouse Y");
+        float mouseX = SimpleInput.GetAxis("Mouse X");
+        float mouseY = SimpleInput.GetAxis("Mouse Y");
         float deltaT = Time.deltaTime;
 
         rotY += mouseY * rotationSpeed * deltaT;
