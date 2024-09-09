@@ -1,0 +1,27 @@
+All assets are roughly scaled to the Unreal Engine Mannequin.
+Additionally you can add this to your Unreal Engine project simply by copying the provided content folder.
+
+INCLUDED
+
+- 44 Wall Variations
+- 39 Decorations
+- 37 Interactables
+- 17 Props
+- 16 Lootables
+- 4 Pickups
+- 3 Stations
+- 1 Traps
+- Outline Post Process Material (Unreal Engine)
+
+FILE FORMATS
+
+- FBX
+- OBJ
+- DAE
+
+LICENCE: This asset pack can be used in both free and commercial projects. You can modify it to suit your own needs. You may not redistribute or resell it.
+
+If you come across issues or need help, please contact me. Thanks! :)
+
+trevor-pupkin@protonmail.com
+https://trevor-pupkin.itch.io/
