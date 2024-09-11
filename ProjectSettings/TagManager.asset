@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - Gem
   - Spikes
+  - Final
   layers:
   - Default
   - TransparentFX
