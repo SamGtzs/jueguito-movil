@@ -6,9 +6,20 @@ using TMPro;
 
 public class SistemaRecoleccion : MonoBehaviour
 {
+    private int HighScore;
+
     public int cantidadGemas;
 
     public TextMeshProUGUI numero;
+
+    public TextMeshProUGUI GemasFinales;
+
+    private void Start()
+    {
+        ResetGemas();
+        HighScore = PlayerPrefs.GetInt("HighScore", 0);
+    }
+
 
     private void Update()
     {
@@ -22,5 +33,24 @@ public class SistemaRecoleccion : MonoBehaviour
             Destroy(other.gameObject);
             cantidadGemas ++;
         }
+        if(cantidadGemas > HighScore)
+        {
+         HighScore=cantidadGemas;
+            PlayerPrefs.SetInt("HighScore", HighScore);
+            PlayerPrefs.Save();
+
+            if(HighScore != null)
+            {
+                GemasFinales.text = HighScore.ToString();
+            }
+        }
+
+    }
+
+    private void ResetGemas()
+    {
+        HighScore = 0;
+        PlayerPrefs.SetInt("HighScore", HighScore);
+        PlayerPrefs.Save();
     }
 }
