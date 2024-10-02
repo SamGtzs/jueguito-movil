@@ -8,5 +8,6 @@ public class CambioScena : MonoBehaviour
     public void jugar()
     {
         SceneManager.LoadScene(2);
+        Time.timeScale = 1f;
     }
 }
