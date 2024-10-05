@@ -706,7 +706,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 165091805}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 541668388}
+        m_TargetAssemblyTypeName: Anivel2, Assembly-CSharp
+        m_MethodName: jugar2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &165091805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1837,6 +1849,7 @@ GameObject:
   - component: {fileID: 541668384}
   - component: {fileID: 541668383}
   - component: {fileID: 541668387}
+  - component: {fileID: 541668388}
   m_Layer: 0
   m_Name: CanvasGanaste
   m_TagString: Untagged
@@ -1939,6 +1952,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8864c2a416d9eb468e9496d446b6b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &541668388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541668382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6f780039cc6a343a2158e629a5eec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &593642499
@@ -7392,6 +7417,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3643569401650004592, guid: 3a1ec83429d924549a0fe3997bc564e9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6690258952399009829, guid: 3a1ec83429d924549a0fe3997bc564e9,
         type: 3}
       propertyPath: GemasFinales
@@ -7399,8 +7429,23 @@ PrefabInstance:
       objectReference: {fileID: 940567960}
     - target: {fileID: 6707088476691396393, guid: 3a1ec83429d924549a0fe3997bc564e9,
         type: 3}
+      propertyPath: maxAngle
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707088476691396393, guid: 3a1ec83429d924549a0fe3997bc564e9,
+        type: 3}
+      propertyPath: minAngle
+      value: -70
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707088476691396393, guid: 3a1ec83429d924549a0fe3997bc564e9,
+        type: 3}
       propertyPath: walkSpeed
-      value: 400
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707088476691396393, guid: 3a1ec83429d924549a0fe3997bc564e9,
+        type: 3}
+      propertyPath: rotationSpeed
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 7394454617352349065, guid: 3a1ec83429d924549a0fe3997bc564e9,
         type: 3}
