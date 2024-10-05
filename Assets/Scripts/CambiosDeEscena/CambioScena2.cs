@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class CambioScena2 : MonoBehaviour
 {
-    public void menu()
+
+    public void menu(string escena)
     {
-        SceneManager.LoadScene(0);
+
+        SceneManager.LoadScene(escena);
     }
 }

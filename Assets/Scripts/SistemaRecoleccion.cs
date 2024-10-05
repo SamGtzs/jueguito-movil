@@ -14,10 +14,13 @@ public class SistemaRecoleccion : MonoBehaviour
 
     public TextMeshProUGUI GemasFinales;
 
+
+
     private void Start()
     {
         ResetGemas();
         HighScore = PlayerPrefs.GetInt("HighScore", 0);
+
     }
 
 
@@ -28,12 +31,14 @@ public class SistemaRecoleccion : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Gem"))
+        
+        if (other.gameObject.CompareTag("Gem"))
         {
             Destroy(other.gameObject);
-            cantidadGemas ++;
+            cantidadGemas++;
+
         }
-        if(cantidadGemas > HighScore)
+        if (cantidadGemas > HighScore)
         {
          HighScore=cantidadGemas;
             PlayerPrefs.SetInt("HighScore", HighScore);
@@ -46,6 +51,8 @@ public class SistemaRecoleccion : MonoBehaviour
         }
 
     }
+
+
 
     private void ResetGemas()
     {
