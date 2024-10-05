@@ -23,7 +23,15 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/Niveles.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/SampleScene.unity
+    m_path: Assets/Scenes/Nivel 1.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Nivel 2.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Nivel 3.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Opciones.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Tienda.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings:
@@ -171,8 +179,6 @@ MonoBehaviour:
     - line: '|   - {fileID: -944628639613478452, guid: 56456e1eace5340da9ff5bdd9bde8c5e,
         type: 3}'
     - line: '|   - {instanceID: 0}'
-    - line: '|   - {fileID: -6919353774616197580, guid: a566526468fb5124d94605139d5a440c,
-        type: 2}'
     - line: '|   metroInputSource: 0'
     - line: '|   wsaTransparentSwapchain: 0'
     - line: '|   m_HolographicPauseOnTrackingLoss: 1'
@@ -928,6 +934,6 @@ MonoBehaviour:
         m_DebugSymbolFormat: 5
         m_CurrentDeploymentTargetId: __builtin__target_default
         m_BuildType: 2
-        m_BuildAppBundle: 0
+        m_BuildAppBundle: 1
         m_IPAddressToConnect: 
         m_SymlinkSources: 0
