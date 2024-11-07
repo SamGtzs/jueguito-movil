@@ -1,1 +1,0 @@
-C:\Users\pekac\OneDrive\Documentos\GitHub\jueguito-movil\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\1e2458m6\obj\arm64-v8a
